@@ -1,0 +1,24 @@
+//////////// COMANDOS GIT ////////////
+
+Para empezar haremos click derecho dentro de la carpeta del proyecto:
+GIT BASH HERE
+
+Ejecutaremos el comando GIT INIT y asi se creara una carpeta oculta de GIT
+
+Con el comando GIT STATUS -S se checkearan los archivos de la carpeta, si no está respaldados aparecerá un interrogante en su lado izquierdo
+
+Para añadir un archivo concreto al respaldo de git ejecutaremos GIT ADD INDEX.HTML (nombre del archivo concreto)
+
+Despues ejecutar GIT COMMIT -M "COMIENZO DEL PROYECTO"
+
+Al volver a hacer un git status -s, ese archivo ya no aparecerá
+
+Si hacemos una modificación al archivo, si que aprecerá con una M en la izquierda (con un git status -s)
+
+Hemos de indicarle que hemos modificado el index.html con el comando GIT ADD INDEX.HTML
+
+Ejecutamos GIT COMMIT -M "AGREGADO TITULO. PRIMER PARRAFO"
+
+Con GIT LOG --ONELINE se mostraran cada cambio que se haya realizado.
+
+Con GIT RESET --HARD 01cdac6 se consigue una restauracion del archivo con el codigo de la instantanea a resetear (a la izquierda del comando anterior)

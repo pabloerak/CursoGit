@@ -5,7 +5,7 @@ GIT BASH HERE
 
 Ejecutaremos el comando GIT INIT y asi se creara una carpeta oculta de GIT
 
-Con el comando GIT STATUS -S se checkearan los archivos de la carpeta, si no está respaldados aparecerá un interrogante en su lado izquierdo
+Con el comando GIT STATUS -S se checkearan los archivos de la carpeta, si no está respaldados en el staging area (area intermedia) aparecerá un interrogante en su lado izquierdo
 
 Para añadir un archivo concreto al respaldo de git ejecutaremos GIT ADD INDEX.HTML (nombre del archivo concreto)
 
@@ -22,3 +22,11 @@ Ejecutamos GIT COMMIT -M "AGREGADO TITULO. PRIMER PARRAFO"
 Con GIT LOG --ONELINE se mostraran cada cambio que se haya realizado.
 
 Con GIT RESET --HARD 01cdac6 se consigue una restauracion del archivo con el codigo de la instantanea a resetear (a la izquierda del comando anterior)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Con el comando GIT ADD . se introducen en el staging area (area intermedia) todos los archivos del proyecto (util en proyectos con muchos archivos).
+
+Con GIT COMMAND -AM "Titulo del commit" se hacen dos comandos en uno, se hace el commit y se le da el nombre("m")
+
+
